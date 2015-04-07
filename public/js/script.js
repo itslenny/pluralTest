@@ -4,7 +4,7 @@ $(function(){
   $('#plural-form').on('submit',function(e){
     e.preventDefault();
 
-    if($('#word-text').val().length < 1 || $('#word-text').val().split(' ') > 1){
+    if($('#word-text').val().length < 1 || $('#word-text').val().split(' ').length > 1){
       alert('Enter exactly ONE word.');
       return;
     }
